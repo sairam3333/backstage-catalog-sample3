@@ -4,8 +4,9 @@ metadata:
   name: bjnkml
   description: "gbhjlk"
   tags:
-    - backstage
-    - microservice
+    - typescript
+    - html
+    - scss
   annotations:
     github.com/project-slug: sairam3333/bjnkml
     backstage.io/source-location: url:https://github.com/sairam3333/bjnkml

@@ -4,8 +4,10 @@ metadata:
   name: backstage-demo-sairam
   description: "backstage-demo-sairam"
   tags:
-    - backstage
-    - microservice
+    - javascript
+    - dockerfile
+    - typescript
+    - html
   annotations:
     github.com/project-slug: sairam3333/backstage-demo-sairam
     backstage.io/source-location: url:https://github.com/sairam3333/backstage-demo-sairam

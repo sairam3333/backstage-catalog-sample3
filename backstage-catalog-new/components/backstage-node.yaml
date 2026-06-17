@@ -3,9 +3,6 @@ kind: Component
 metadata:
   name: backstage-node
   description: "backstage testing node"
-  tags:
-    - backstage
-    - microservice
   annotations:
     github.com/project-slug: sairam3333/backstage-node
     backstage.io/source-location: url:https://github.com/sairam3333/backstage-node

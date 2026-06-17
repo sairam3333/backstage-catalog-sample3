@@ -4,8 +4,10 @@ metadata:
   name: acting-drivers-trichy
   description: "acting-drivers-trichy repository"
   tags:
-    - backstage
-    - microservice
+    - dockerfile
+    - typescript
+    - html
+    - scss
   annotations:
     github.com/project-slug: sairam3333/Acting-Drivers-Trichy
     backstage.io/source-location: url:https://github.com/sairam3333/Acting-Drivers-Trichy

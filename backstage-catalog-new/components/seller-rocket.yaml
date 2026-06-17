@@ -3,9 +3,6 @@ kind: Component
 metadata:
   name: seller-rocket
   description: "task given by seller rocket"
-  tags:
-    - backstage
-    - microservice
   annotations:
     github.com/project-slug: sairam3333/seller-rocket
     backstage.io/source-location: url:https://github.com/sairam3333/seller-rocket

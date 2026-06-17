@@ -3,9 +3,6 @@ kind: Component
 metadata:
   name: backstage-catalog-sample2
   description: "backstage-catalog-sample2 repository"
-  tags:
-    - backstage
-    - microservice
   annotations:
     github.com/project-slug: sairam3333/backstage-catalog-sample2
     backstage.io/source-location: url:https://github.com/sairam3333/backstage-catalog-sample2

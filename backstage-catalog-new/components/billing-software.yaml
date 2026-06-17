@@ -3,9 +3,6 @@ kind: Component
 metadata:
   name: billing-software
   description: "Billing software to help small shops like grocery shops and other types of shops to manage sales, purchase, inventory, reports and etc."
-  tags:
-    - backstage
-    - microservice
   annotations:
     github.com/project-slug: sairam3333/billing-software
     backstage.io/source-location: url:https://github.com/sairam3333/billing-software

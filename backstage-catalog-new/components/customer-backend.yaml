@@ -4,8 +4,7 @@ metadata:
   name: customer-backend
   description: "This is customer_backend"
   tags:
-    - backstage
-    - microservice
+    - javascript
   annotations:
     github.com/project-slug: sairam3333/customer-backend
     backstage.io/source-location: url:https://github.com/sairam3333/customer-backend

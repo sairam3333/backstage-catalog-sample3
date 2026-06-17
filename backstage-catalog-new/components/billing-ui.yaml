@@ -4,13 +4,15 @@ metadata:
   name: billing-ui
   description: "billing-ui repository"
   tags:
-    - backstage
+    - typescript
+    - html
+    - scss
   annotations:
     github.com/project-slug: sairam3333/billing-ui
     backstage.io/source-location: url:https://github.com/sairam3333/billing-ui
     backstage.io/view-url: https://github.com/sairam3333/billing-ui
 spec:
-  type: website
+  type: service
   lifecycle: production
   owner: team
 
