@@ -33,7 +33,6 @@ spec:
     - ./components/customer.yaml
     - ./apis/customer-api.yaml
     - ./components/acting-drivers-trichy.yaml
-    - ./apis/acting-drivers-trichy-api.yaml
     - ./components/backstage-demo-new.yaml
     - ./apis/backstage-demo-new-api.yaml
     - ./components/seller-rocket.yaml
