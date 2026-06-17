@@ -1,0 +1,8 @@
+﻿apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: mongodb
+  description: Shared MongoDB Database
+spec:
+  type: database
+  owner: team

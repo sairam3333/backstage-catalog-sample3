@@ -1,0 +1,17 @@
+﻿apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage-catalog-sample
+  description: "backstage-catalog-sample repository"
+  annotations:
+    github.com/project-slug: sairam3333/backstage-catalog-sample
+spec:
+  type: service
+  lifecycle: production
+  owner: team
+
+  dependsOn:
+    - resource:default/mongodb
+
+  providesApis:
+    - backstage-catalog-sample-api

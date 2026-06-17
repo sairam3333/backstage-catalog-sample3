@@ -1,0 +1,17 @@
+﻿apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: billing-ui
+  description: "billing-ui repository"
+  annotations:
+    github.com/project-slug: sairam3333/billing-ui
+spec:
+  type: service
+  lifecycle: production
+  owner: team
+
+  dependsOn:
+    - resource:default/mongodb
+
+  providesApis:
+    - billing-ui-api

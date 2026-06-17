@@ -1,0 +1,15 @@
+﻿apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: sairam-test-api
+  description: API for sairam-test
+spec:
+  type: openapi
+  lifecycle: production
+  owner: team
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: sairam-test API
+      version: 1.0.0
+    paths: {}

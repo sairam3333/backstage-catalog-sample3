@@ -1,0 +1,15 @@
+﻿apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: acting-drivers-trichy-api
+  description: API for acting-drivers-trichy
+spec:
+  type: openapi
+  lifecycle: production
+  owner: team
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: acting-drivers-trichy API
+      version: 1.0.0
+    paths: {}

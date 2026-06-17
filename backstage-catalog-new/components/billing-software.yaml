@@ -1,0 +1,17 @@
+﻿apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: billing-software
+  description: "Billing software to help small shops like grocery shops and other types of shops to manage sales, purchase, inventory, reports and etc."
+  annotations:
+    github.com/project-slug: sairam3333/billing-software
+spec:
+  type: service
+  lifecycle: production
+  owner: team
+
+  dependsOn:
+    - resource:default/mongodb
+
+  providesApis:
+    - billing-software-api

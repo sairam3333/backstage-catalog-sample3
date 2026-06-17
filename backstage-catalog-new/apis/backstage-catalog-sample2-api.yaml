@@ -1,0 +1,15 @@
+﻿apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: backstage-catalog-sample2-api
+  description: API for backstage-catalog-sample2
+spec:
+  type: openapi
+  lifecycle: production
+  owner: team
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: backstage-catalog-sample2 API
+      version: 1.0.0
+    paths: {}

@@ -1,0 +1,15 @@
+﻿apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: 2kactingdrivers-api
+  description: API for 2kactingdrivers
+spec:
+  type: openapi
+  lifecycle: production
+  owner: team
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: 2kactingdrivers API
+      version: 1.0.0
+    paths: {}

@@ -1,0 +1,17 @@
+﻿apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: acting-drivers-trichy
+  description: "acting-drivers-trichy repository"
+  annotations:
+    github.com/project-slug: sairam3333/Acting-Drivers-Trichy
+spec:
+  type: service
+  lifecycle: production
+  owner: team
+
+  dependsOn:
+    - resource:default/mongodb
+
+  providesApis:
+    - acting-drivers-trichy-api

@@ -1,0 +1,15 @@
+﻿apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: backstage-demo-sairam-api
+  description: API for backstage-demo-sairam
+spec:
+  type: openapi
+  lifecycle: production
+  owner: team
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: backstage-demo-sairam API
+      version: 1.0.0
+    paths: {}

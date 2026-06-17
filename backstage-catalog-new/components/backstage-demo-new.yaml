@@ -1,0 +1,17 @@
+﻿apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage-demo-new
+  description: "Elite-Backstage-Demo"
+  annotations:
+    github.com/project-slug: sairam3333/backstage-demo-new
+spec:
+  type: service
+  lifecycle: production
+  owner: team
+
+  dependsOn:
+    - resource:default/mongodb
+
+  providesApis:
+    - backstage-demo-new-api
