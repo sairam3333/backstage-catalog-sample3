@@ -31,30 +31,24 @@ foreach ($repo in $repos) {
     }
 
     # Detect component type
-    $type = "service"
-    if ($repoName -match "frontend|ui|angular|web") {
-        $type = "website"
-    }
+    # $type = "service"
+    # if ($repoName -match "frontend|ui|angular|web") {
+    #     $type = "website"
+    # }
 
     # Build tags
     $tags = @()
 
     if ($repo.languages) {
         foreach ($lang in $repo.languages) {
-            if ($lang.name) {
-                $tag = ($lang.name.ToLower() -replace '[^a-z0-9-]', '-')
+            if ($lang.node) {
+                $tag = ($lang.node.name.ToLower() -replace '[^a-z0-9-]', '-')
                 $tags += $tag
             }
         }
     }
 
-    $tags += "backstage"
-
-    if ($type -eq "service") {
-        $tags += "microservice"
-    }
-
-    $tags = $tags | Select-Object -Unique
+  $tags = $tags | Select-Object -Unique
 
     # Build tags YAML
     $tagsYaml = ""
@@ -155,6 +149,8 @@ metadata:
 spec:
   targets:
 "@
+
+$targets = $targets | Select-Object -Unique
 
 foreach ($target in $targets) {
     $catalog += "`n    - $target"
