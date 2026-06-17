@@ -4,44 +4,62 @@ metadata:
   name: root-catalog
 spec:
   targets:
-    - ./components/backstage-catalog-sample2.yaml
-    - ./apis/backstage-catalog-sample2-api.yaml
-    - ./components/backstage-catalog-sample.yaml
-    - ./apis/backstage-catalog-sample-api.yaml
-    - ./components/template-structure.yaml
-    - ./apis/template-structure-api.yaml
-    - ./components/sairam-sairam.yaml
-    - ./apis/sairam-sairam-api.yaml
-    - ./components/bjnkml.yaml
-    - ./apis/bjnkml-api.yaml
-    - ./components/sairam-test.yaml
-    - ./apis/sairam-test-api.yaml
-    - ./components/angular-sample-template.yaml
-    - ./apis/angular-sample-template-api.yaml
-    - ./components/backstage-demo-sairam.yaml
-    - ./apis/backstage-demo-sairam-api.yaml
-    - ./components/backstage-angular.yaml
-    - ./apis/backstage-angular-api.yaml
-    - ./components/backstage-node.yaml
-    - ./apis/backstage-node-api.yaml
-    - ./components/sairam.yaml
-    - ./apis/sairam-api.yaml
-    - ./components/acting-drivers-trichy.yaml
-    - ./apis/acting-drivers-trichy-api.yaml
-    - ./components/customer-backend.yaml
-    - ./apis/customer-backend-api.yaml
-    - ./components/customer.yaml
-    - ./apis/customer-api.yaml
-    - ./components/acting-drivers-trichy.yaml
-    - ./components/backstage-demo-new.yaml
-    - ./apis/backstage-demo-new-api.yaml
-    - ./components/seller-rocket.yaml
-    - ./apis/seller-rocket-api.yaml
-    - ./components/billing-ui.yaml
-    - ./apis/billing-ui-api.yaml
-    - ./components/billing-software.yaml
-    - ./apis/billing-software-api.yaml
     - ./components/2kactingdrivers.yaml
     - ./apis/2kactingdrivers-api.yaml
+
+    - ./components/acting-drivers-trichy.yaml
+    - ./apis/acting-drivers-trichy-api.yaml
+
+    - ./components/angular-sample-template.yaml
+    - ./apis/angular-sample-template-api.yaml
+
+    - ./components/backstage-angular.yaml
+    - ./apis/backstage-angular-api.yaml
+
+    - ./components/backstage-catalog-sample.yaml
+    - ./apis/backstage-catalog-sample-api.yaml
+
+    - ./components/backstage-catalog-sample2.yaml
+    - ./apis/backstage-catalog-sample2-api.yaml
+
+    - ./components/backstage-demo-new.yaml
+    - ./apis/backstage-demo-new-api.yaml
+
+    - ./components/backstage-demo-sairam.yaml
+    - ./apis/backstage-demo-sairam-api.yaml
+
+    - ./components/backstage-node.yaml
+    - ./apis/backstage-node-api.yaml
+
+    - ./components/billing-software.yaml
+    - ./apis/billing-software-api.yaml
+
+    - ./components/billing-ui.yaml
+    - ./apis/billing-ui-api.yaml
+
+    - ./components/bjnkml.yaml
+    - ./apis/bjnkml-api.yaml
+
+    - ./components/customer.yaml
+    - ./apis/customer-api.yaml
+
+    - ./components/customer-backend.yaml
+    - ./apis/customer-backend-api.yaml
+
+    - ./components/sairam.yaml
+    - ./apis/sairam-api.yaml
+
+    - ./components/sairam-sairam.yaml
+    - ./apis/sairam-sairam-api.yaml
+
+    - ./components/sairam-test.yaml
+    - ./apis/sairam-test-api.yaml
+
+    - ./components/seller-rocket.yaml
+    - ./apis/seller-rocket-api.yaml
+
+    - ./components/template-structure.yaml
+    - ./apis/template-structure-api.yaml
+
     - ./resources/mongodb.yaml
     - ./groups/team.yaml
