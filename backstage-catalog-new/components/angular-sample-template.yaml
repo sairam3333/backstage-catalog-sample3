@@ -3,10 +3,14 @@ kind: Component
 metadata:
   name: angular-sample-template
   description: "angular-sample-template repository"
+  tags:
+    - backstage
   annotations:
     github.com/project-slug: sairam3333/angular-sample-template
+    backstage.io/source-location: url:https://github.com/sairam3333/angular-sample-template
+    backstage.io/view-url: https://github.com/sairam3333/angular-sample-template
 spec:
-  type: service
+  type: website
   lifecycle: production
   owner: team
 

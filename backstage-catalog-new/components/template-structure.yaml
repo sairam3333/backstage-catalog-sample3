@@ -3,8 +3,13 @@ kind: Component
 metadata:
   name: template-structure
   description: "template-structure repository"
+  tags:
+    - backstage
+    - microservice
   annotations:
     github.com/project-slug: sairam3333/template-structure
+    backstage.io/source-location: url:https://github.com/sairam3333/template-structure
+    backstage.io/view-url: https://github.com/sairam3333/template-structure
 spec:
   type: service
   lifecycle: production

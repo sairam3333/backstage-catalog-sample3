@@ -3,8 +3,13 @@ kind: Component
 metadata:
   name: 2kactingdrivers
   description: "Acting driver booking application"
+  tags:
+    - backstage
+    - microservice
   annotations:
     github.com/project-slug: sairam3333/2KActingdrivers
+    backstage.io/source-location: url:https://github.com/sairam3333/2KActingdrivers
+    backstage.io/view-url: https://github.com/sairam3333/2KActingdrivers
 spec:
   type: service
   lifecycle: production
@@ -15,5 +20,3 @@ spec:
 
   providesApis:
     - 2kactingdrivers-api
-
-

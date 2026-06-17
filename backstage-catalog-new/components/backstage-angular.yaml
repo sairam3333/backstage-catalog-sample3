@@ -3,10 +3,14 @@ kind: Component
 metadata:
   name: backstage-angular
   description: "Testing repo for backstage"
+  tags:
+    - backstage
   annotations:
     github.com/project-slug: sairam3333/backstage-angular
+    backstage.io/source-location: url:https://github.com/sairam3333/backstage-angular
+    backstage.io/view-url: https://github.com/sairam3333/backstage-angular
 spec:
-  type: service
+  type: website
   lifecycle: production
   owner: team
 

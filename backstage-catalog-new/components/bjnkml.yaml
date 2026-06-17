@@ -3,8 +3,13 @@ kind: Component
 metadata:
   name: bjnkml
   description: "gbhjlk"
+  tags:
+    - backstage
+    - microservice
   annotations:
     github.com/project-slug: sairam3333/bjnkml
+    backstage.io/source-location: url:https://github.com/sairam3333/bjnkml
+    backstage.io/view-url: https://github.com/sairam3333/bjnkml
 spec:
   type: service
   lifecycle: production

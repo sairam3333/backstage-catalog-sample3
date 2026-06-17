@@ -3,8 +3,13 @@ kind: Component
 metadata:
   name: customer
   description: "customer repository"
+  tags:
+    - backstage
+    - microservice
   annotations:
     github.com/project-slug: sairam3333/customer
+    backstage.io/source-location: url:https://github.com/sairam3333/customer
+    backstage.io/view-url: https://github.com/sairam3333/customer
 spec:
   type: service
   lifecycle: production

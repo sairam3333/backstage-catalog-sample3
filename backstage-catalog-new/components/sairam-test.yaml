@@ -3,8 +3,13 @@ kind: Component
 metadata:
   name: sairam-test
   description: "sairam"
+  tags:
+    - backstage
+    - microservice
   annotations:
     github.com/project-slug: sairam3333/sairam-test
+    backstage.io/source-location: url:https://github.com/sairam3333/sairam-test
+    backstage.io/view-url: https://github.com/sairam3333/sairam-test
 spec:
   type: service
   lifecycle: production
