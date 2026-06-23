@@ -10,7 +10,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: team
+  owner: Main Team
 
   dependsOn:
     - resource:default/mongodb
