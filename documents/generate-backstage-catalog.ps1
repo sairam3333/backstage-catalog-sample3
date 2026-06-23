@@ -1,4 +1,4 @@
-```powershell
+```powershell-1
 # generate-backstage-catalog.ps1
 
 $root = "backstage-catalog-new"
