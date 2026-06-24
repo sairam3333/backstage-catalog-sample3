@@ -49,13 +49,13 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: owner_three
+  name: udhayakaran
   namespace: default
   annotations:
-    google.com/email: owner.three@yourcompany.com
+    google.com/email: udhayakaran@elitecorpusa.com
 spec:
   profile:
-    displayName: Owner Three
+    displayName: udhayakaran
     email: owner.three@yourcompany.com
   memberOf:
     - admins
