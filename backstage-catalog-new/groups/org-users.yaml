@@ -98,13 +98,13 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: sairam r           # sairam@yourcompany.com → sairam
+  name: sairam          # sairam@yourcompany.com → sairam
   namespace: default
   annotations:
     google.com/email: beindiansai@gmail.com
 spec:
   profile:
-    displayName: sairam r
+    displayName: sairam
     email: beindiansai@gmail.com
   memberOf:
     - platform
