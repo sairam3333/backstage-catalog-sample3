@@ -34,13 +34,13 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: Udhayakiran
+  name: Udhayakiran2110
   namespace: default
   annotations:
     google.com/email: udhayakaran@elitecorpusa.com
 spec:
   profile:
-    displayName: Udhayakiran
+    displayName: Udhayakiran2110
     email: udhayakaran@elitecorpusa.com
   memberOf:
     - admins

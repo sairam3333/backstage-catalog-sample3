@@ -27,7 +27,7 @@ spec:
     email: admins@yourcompany.com
   members:
     # Only your 4 static owner accounts (email local-parts, dots→underscores)
-    - Udhayakiran
+    - Udhayakiran2110
     - Udhayakiran
     # - owner_three
     # - owner_four
@@ -48,7 +48,7 @@ spec:
     displayName: Platform Engineering
     email: platform@yourcompany.com
   members:
-    - Udhayakiran   # sairam or equivalent
+    - owner_one   # sairam or equivalent
   children: []
 
 ---
