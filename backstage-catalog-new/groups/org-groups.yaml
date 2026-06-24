@@ -27,7 +27,7 @@ spec:
     email: admins@yourcompany.com
   members:
     # Only your 4 static owner accounts (email local-parts, dots→underscores)
-    - Udhaya Kiran
+    - Udhayakiran
     - Udhayakiran
     # - owner_three
     # - owner_four
