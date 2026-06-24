@@ -44,3 +44,5 @@ spec:
     - ./apis/2kactingdrivers-api.yaml
     - ./resources/mongodb.yaml
     - ./groups/team.yaml
+    - ./groups/org-groups.yaml
+    - ./groups/org-users.yaml

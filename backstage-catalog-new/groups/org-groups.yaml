@@ -1,0 +1,140 @@
+# backstage-catalog-new/groups/org-groups.yaml
+#
+# Define your company groups here.
+# RBAC CSV maps these groups → roles:
+#   group:default/admins      → role:default/admin
+#   group:default/engineering → role:default/owner
+#   group:default/platform    → role:default/owner
+#   (all google users)        → role:default/user (via defaultRole config)
+#
+# To give someone owner access: add them as a member of engineering or platform.
+# To give admin access: add them to admins (or put email in STATIC_OWNER_EMAILS).
+# No code changes ever needed — just edit this YAML and push.
+#
+
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: admins
+  namespace: default
+  description: Portal administrators — full access to all Backstage features and RBAC UI
+  annotations:
+    backstage.io/managed-by-location: url:https://github.com/sairam3333/backstage-catalog-sample3/blob/main/backstage-catalog-new/groups/org-groups.yaml
+spec:
+  type: team
+  profile:
+    displayName: Admins
+    email: admins@yourcompany.com
+  members:
+    # Only your 4 static owner accounts (email local-parts, dots→underscores)
+    - Udhaya Kiran
+    - Udhayakiran
+    # - owner_three
+    # - owner_four
+  children: []
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: platform
+  namespace: default
+  description: Platform engineering — owns platform components, gets owner-level RBAC
+  annotations:
+    backstage.io/managed-by-location: url:https://github.com/sairam3333/backstage-catalog-sample3/blob/main/backstage-catalog-new/groups/org-groups.yaml
+spec:
+  type: team
+  profile:
+    displayName: Platform Engineering
+    email: platform@yourcompany.com
+  members:
+    - Udhayakiran   # sairam or equivalent
+  children: []
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: engineering
+  namespace: default
+  description: Engineering umbrella group — all engineers get owner-level access on their components
+  annotations:
+    backstage.io/managed-by-location: url:https://github.com/sairam3333/backstage-catalog-sample3/blob/main/backstage-catalog-new/groups/org-groups.yaml
+spec:
+  type: department
+  profile:
+    displayName: Engineering
+  # Add sub-teams as children — members of children inherit this group's role
+  children:
+    - frontend-team
+    - backend-team
+    - data-team
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: frontend-team
+  namespace: default
+  description: Frontend engineers
+  annotations:
+    backstage.io/managed-by-location: url:https://github.com/sairam3333/backstage-catalog-sample3/blob/main/backstage-catalog-new/groups/org-groups.yaml
+spec:
+  type: team
+  profile:
+    displayName: Frontend Team
+  # 👇 Add/remove names here to grant/revoke owner-level access
+  members: []
+  children: []
+  parent: engineering
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: backend-team
+  namespace: default
+  description: Backend engineers
+  annotations:
+    backstage.io/managed-by-location: url:https://github.com/sairam3333/backstage-catalog-sample3/blob/main/backstage-catalog-new/groups/org-groups.yaml
+spec:
+  type: team
+  profile:
+    displayName: Backend Team
+  members: []
+  children: []
+  parent: engineering
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: data-team
+  namespace: default
+  description: Data engineers
+  annotations:
+    backstage.io/managed-by-location: url:https://github.com/sairam3333/backstage-catalog-sample3/blob/main/backstage-catalog-new/groups/org-groups.yaml
+spec:
+  type: team
+  profile:
+    displayName: Data Team
+  members: []
+  children: []
+  parent: engineering
+
+---
+# Stakeholders / viewers — read-only access (inherits from defaultRole=user)
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: stakeholders
+  namespace: default
+  description: Non-engineering — read-only catalog access
+  annotations:
+    backstage.io/managed-by-location: url:https://github.com/sairam3333/backstage-catalog-sample3/blob/main/backstage-catalog-new/groups/org-groups.yaml
+spec:
+  type: team
+  profile:
+    displayName: Stakeholders
+  members: []
+  children: []

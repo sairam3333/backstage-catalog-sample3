@@ -1,0 +1,111 @@
+# backstage-catalog-new/groups/org-users.yaml
+#
+# User entities. Each user's `metadata.name` must match the
+# username derived from their Google email in googleAuthModule.ts:
+#   john.doe@yourcompany.com → john_doe
+#   sairam@yourcompany.com   → sairam
+#
+# To onboard a new user:
+#   1. Add a User entity here with their email annotation
+#   2. Add their name to the correct Group in org-groups.yaml
+#   3. Push to GitHub — Backstage auto-ingests within minutes
+#   ✅ No code changes, no restart needed.
+#
+
+# ── Static admin users (4 owners) ────────────────────────────────────────────
+
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: Udhayakiran       # ← must match emailToUsername('owner.one@yourcompany.com')
+  namespace: default
+  annotations:
+    google.com/email: udhayakiran2110@gmail.com
+    backstage.io/managed-by-location: url:https://github.com/sairam3333/backstage-catalog-sample3/blob/main/backstage-catalog-new/groups/org-users.yaml
+spec:
+  profile:
+    displayName: Udhayakiran
+    email: udhayakiran2110@gmail.com
+  memberOf:
+    - admins
+    - platform
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: Udhaya kiran
+  namespace: default
+  annotations:
+    google.com/email: udhayakaran@elitecorpusa.com
+spec:
+  profile:
+    displayName: Udhaya kiran
+    email: udhayakaran@elitecorpusa.com
+  memberOf:
+    - admins
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: owner_three
+  namespace: default
+  annotations:
+    google.com/email: owner.three@yourcompany.com
+spec:
+  profile:
+    displayName: Owner Three
+    email: owner.three@yourcompany.com
+  memberOf:
+    - admins
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: owner_four
+  namespace: default
+  annotations:
+    google.com/email: owner.four@yourcompany.com
+spec:
+  profile:
+    displayName: Owner Four
+    email: owner.four@yourcompany.com
+  memberOf:
+    - admins
+
+# ── Dynamic engineering users — add more below as team grows ─────────────────
+# Template to copy:
+#
+# ---
+# apiVersion: backstage.io/v1alpha1
+# kind: User
+# metadata:
+#   name: <email_local_part_dots_replaced_with_underscores>
+#   namespace: default
+#   annotations:
+#     google.com/email: <full.email@yourcompany.com>
+# spec:
+#   profile:
+#     displayName: Full Name
+#     email: <full.email@yourcompany.com>
+#   memberOf:
+#     - <team-name>       ← puts them in the right RBAC group
+#     - engineering       ← gives them owner-level role
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: sairam r           # sairam@yourcompany.com → sairam
+  namespace: default
+  annotations:
+    google.com/email: beindiansai@gmail.com
+spec:
+  profile:
+    displayName: sairam r
+    email: beindiansai@gmail.com
+  memberOf:
+    - platform
+    - admins
