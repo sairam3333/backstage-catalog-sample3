@@ -95,17 +95,17 @@ spec:
 #     - engineering       ← gives them owner-level role
 
 ---
-apiVersion: backstage.io/v1alpha1
-kind: User
-metadata:
-  name: sairam          # sairam@yourcompany.com → sairam
-  namespace: default
-  annotations:
-    google.com/email: beindiansai@gmail.com
-spec:
-  profile:
-    displayName: sairam
-    email: beindiansai@gmail.com
-  memberOf:
-    - platform
-    - admins
+# apiVersion: backstage.io/v1alpha1
+# kind: User
+# metadata:
+#   name: sairam          # sairam@yourcompany.com → sairam
+#   namespace: default
+#   annotations:
+#     google.com/email: beindiansai@gmail.com
+# spec:
+#   profile:
+#     displayName: sairam
+#     email: beindiansai@gmail.com
+#   memberOf:
+#     - platform
+#     - admins
